@@ -1,0 +1,9 @@
+<p>All the students:</p>
+<% @students.each() do |student| %> 
+
+  <p>forename: <%= student.first_name() %></p>
+  <p>surname: <%= student.last_name() %></p>
+  <p>age: <%= student.age %></p>
+  <p>house: <%= student.house.name %></p>
+  <hr>
+<% end %>
